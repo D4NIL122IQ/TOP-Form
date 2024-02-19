@@ -7,8 +7,25 @@ section{
 }
 
 .right{
+    height: 300px;
+    width: 600px;
     margin-top: 10%;
+    /* margin-bottom: 10%;
+    padding-bottom: 0px; */ 
+    text-align: center;
+    border: 0.1px solid black;
+    box-shadow: 0px 0px 20px 2px rgba(9, 133, 30, 0.809);
 }
+.All{
+    display: flex;
+    justify-content: space-around;
+}
+.L , .R{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .left{
     background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg) ;
