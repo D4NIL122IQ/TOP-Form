@@ -1,0 +1,18 @@
+@import url(./font/Norse-Bold.otf);
+
+section{
+    height: 44.6rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right{
+    margin-top: 10%;
+}
+
+.left{
+    background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg) ;
+    width: 400px;
+   
+
+}
