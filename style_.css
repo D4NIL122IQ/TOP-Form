@@ -1,0 +1,62 @@
+/* palette de couleur trouver sur https://mybrandnewlogo.com/fr/generateur-de-palette-de-couleurs
+    .color1 {color: #125447;}
+    .color2 {color: #4f7759;}
+    .color3 {color: #9a9f7b;}
+    .color4 {color: #e5d2bb;}
+    .color5 {color: #f0f0eb;} 
+*/
+
+@import url('https://fonts.cdnfonts.com/css/norse?styles=22608');
+
+*,::after,::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font:'Norse', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.right{
+    display: grid;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: x-large;
+}
+
+.login{
+    border: 1px solid black; 
+}
+
+H1{
+    text-align: center;
+}
+.mail, .pwd{
+    display: grid;
+    justify-items: start;
+    justify-content: center;
+}
+
+input{
+    margin: 5%;
+}
+
+button{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+a:link , a:visited{
+    color: #4f7759;
+}
