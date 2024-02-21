@@ -23,10 +23,12 @@
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    background-color: #f0f0eb;
 }
 
 
 .right{
+    margin-top: 10vh;
     display: grid;
     justify-content: center;
     font-family: var(--font);
@@ -34,7 +36,14 @@
 }
 
 .login{
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
     border: 1px solid black; 
+    height: 45vh;
+    border-radius: 20px;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 20px 2px #125447;
 }
 
 H1{
@@ -47,16 +56,37 @@ H1{
 }
 
 input{
-    margin: 5%;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 6px 0px #4f7759;
+    text-align: left;
 }
 
-button{
-    display: flex;
-    align-items: center;
+input:valid{
+    border-color: #34924c;
+    box-shadow: 0px 0px 6px 0px  #34924C;
 }
+
+input:invalid{
+    border-color: rgb(206, 18, 18);
+    box-shadow: 0px 0px 6px 0px rgb(206, 18, 18);
+}
+button{
+    margin: 2% 5%;
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #9a9f7b;
+    box-shadow:0px 0px 14px 0px #4f7759;   
+}
+
+button:hover {
+    background-color:  #e5d2bb;
+}
+
 a{
     text-decoration: none;
 }
+
 a:link , a:visited{
     color: #4f7759;
 }
