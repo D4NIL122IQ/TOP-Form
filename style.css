@@ -14,6 +14,9 @@
     box-sizing: border-box;
 }
  
+:root{
+    --font:'Norse', sans-serif;
+}
 section{
     height: 100vh;
     width: 100vw;
@@ -33,12 +36,12 @@ section{
 
 .logo{
     display: flex;
-    flex: 1;
     position: absolute;
-    width:10%;
-    /* padding-left: 15%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .bg-img{
@@ -47,18 +50,18 @@ section{
 
 .right{
     margin-top: 10vh;
+    margin-left: 10vh;
     font-size: x-large;
+    flex: 2;
 }
 .the-form{
     height: 50%;
     width: 700px;
-    margin-top: 10%;
-    padding-top: 3%;
-    padding-bottom: -1px;
-    /* margin-bottom: 10%;
-    padding-bottom: 0px; */ 
+    margin-top: 30px;
+    padding-top: 15px;
     text-align: center;
     border: 0.1px solid black;
+    border-radius: 20px;
     box-shadow: 0px 0px 20px 2px #125447;
     background-color: whitesmoke;
 }
@@ -80,6 +83,16 @@ section{
     justify-items: start;
 }
 
+input:valid{
+    border-color: #34924c;
+    box-shadow: 0px 0px 6px 0px  #34924C;
+}
+
+input:invalid{
+    border-color: rgb(206, 18, 18);
+    box-shadow: 0px 0px 6px 0px rgb(206, 18, 18);
+}
+
 input{
     padding-left: 20px;
     padding-right: 40px;
@@ -89,10 +102,12 @@ input{
 }
 
 button{
-    margin: 5%;
-    padding: 15px;
+    margin: 30px ;
+    padding: 20px;
+    font-size: medium;
     background-color: #9a9f7b;
     box-shadow:0px 0px 14px 0px #373535;
+    text-align: center;
     
 }
 
@@ -101,7 +116,7 @@ button:hover{
 }
 
 p{
-    padding: 5%;
+    padding: 10px;
 }
 
 a{
